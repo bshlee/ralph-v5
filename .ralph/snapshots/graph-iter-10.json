@@ -1,0 +1,312 @@
+{
+  "iteration": 10,
+  "story_id": "story:explore-streaming-latency",
+  "timestamp": "2026-03-28T11:30:40",
+  "nodes": [
+    {
+      "id": "goal:invoke-loop-magic",
+      "kind": "goal",
+      "notes": "The invoke loop (shortcut -> overlay -> context -> prompt -> inject) must feel like native OS infrastructure, not an app. This is the Building Toward goal and the P0 demo moment.",
+      "reason": ""
+    },
+    {
+      "id": "goal:earned-synthesis",
+      "kind": "goal",
+      "notes": "Interview creates contexts with genuine insight \u2014 \"What makes this *you*\" must surprise the user. P0 demo moment #2.",
+      "reason": ""
+    },
+    {
+      "id": "goal:floor-complete",
+      "kind": "goal",
+      "notes": "All 7 FRs implemented, tests pass, Biome clean, tsc clean. The non-negotiable baseline.",
+      "reason": ""
+    },
+    {
+      "id": "constraint:electron-only",
+      "kind": "constraint",
+      "notes": "Electron + React + TypeScript. No Tauri, no Swift. Fixed by PRD.",
+      "reason": ""
+    },
+    {
+      "id": "constraint:sqlite-local",
+      "kind": "constraint",
+      "notes": "SQLite via better-sqlite3, WAL mode, no cloud. All data local.",
+      "reason": ""
+    },
+    {
+      "id": "constraint:openai-only",
+      "kind": "constraint",
+      "notes": "OpenAI API only. gpt-4o-mini for interview + generation, gpt-4o for synthesis. No model choice.",
+      "reason": ""
+    },
+    {
+      "id": "constraint:no-auth",
+      "kind": "constraint",
+      "notes": "Single-user, single-device. No authentication, no billing, no analytics.",
+      "reason": ""
+    },
+    {
+      "id": "constraint:pnpm-biome-vitest",
+      "kind": "constraint",
+      "notes": "pnpm for packages, Biome for lint, Vitest for tests, electron-builder for packaging.",
+      "reason": ""
+    },
+    {
+      "id": "constraint:missing-api-key",
+      "kind": "constraint",
+      "notes": "OPENAI_API_KEY not yet available in environment. Must come from .env for dev or Keychain via onboarding at runtime. AI-dependent stories need this resolved.",
+      "reason": ""
+    },
+    {
+      "id": "obs:scaffold-complete",
+      "kind": "observation",
+      "notes": "Scaffold done: Electron main + overlay windows, React + Tailwind v4 + Framer Motion, Biome + Vitest + jsdom + testing-library, electron-builder configured, typed IPC bridge, design tokens defined. All infrastructure stories can proceed.",
+      "reason": ""
+    },
+    {
+      "id": "obs:prd-phase-ordering",
+      "kind": "observation",
+      "notes": "PRD orders phases by demo impact: scaffold -> Quick Invoke -> Interview+Synthesis -> Reveal+Onboarding. This ordering matches the Building Toward priority \u2014 invoke loop first.",
+      "reason": ""
+    },
+    {
+      "id": "obs:agent-prompt-defined",
+      "kind": "observation",
+      "notes": "agent-prompt.md exists with complete system prompts for all 3 AI steps (interview turn, synthesis, quick invoke generation). This is load-bearing infrastructure \u2014 the prompts define output quality. Stories that integrate AI should reference this file directly.",
+      "reason": ""
+    },
+    {
+      "id": "obs:text-injection-fragility",
+      "kind": "observation",
+      "notes": "AppleScript paste simulation implemented: clipboard.writeText + osascript Cmd+V. Overlay hides first to return focus, 100ms delay lets focus settle. Fallback sends \"Copied \u2014 paste with Cmd+V\" via IPC and re-shows overlay. Known fragility: Electron apps with custom paste handlers, locked fields, Terminal. The Analysis predicted this correctly \u2014 the fallback IS the experience for some invocations.",
+      "reason": "From the Analysis: \"Text injection is the most fragile link in the chain\" and \"The fallback must feel intentional, not broken.\" Building confirmed: the 100ms focus-settling delay is a real constraint discovered during implementation. The hide\u2192delay\u2192paste sequence is the minimum viable approach."
+    },
+    {
+      "id": "obs:overlay-ux-critical",
+      "kind": "observation",
+      "notes": "Full overlay lifecycle implemented: selecting \u2192 prompting \u2192 generating \u2192 done. Streaming tokens via IPC (generation:token events). Prompt auto-focuses for keyboard flow. Error state handled. Overlay resets on re-show. Window height increased to 380px to accommodate generation preview.",
+      "reason": "From building: the streaming architecture (main\u2192renderer IPC per token) is the foundation for perceived latency optimization. The prompt auto-focus ensures keyboard-only path has zero wasted time between context selection and typing."
+    },
+    {
+      "id": "obs:sqlite-ready",
+      "kind": "observation",
+      "notes": "better-sqlite3 integrated with WAL mode, FK enforcement, idempotent migrations, 2 realistic seed contexts. Schema matches PRD data model exactly. The seed contexts are high-quality \u2014 they demonstrate what synthesis should produce, which sets a quality bar for the interview AI.",
+      "reason": "From building: seed data quality matters because it's what users see in dev/demo before real interviews exist. The \"Founder\" and \"Traveler\" contexts model the output fidelity the synthesis engine must match."
+    },
+    {
+      "id": "obs:summary",
+      "kind": "observation",
+      "notes": "Merged lower-priority observations: obs:summary, obs:interview-ui-ready",
+      "reason": ""
+    },
+    {
+      "id": "opp:streaming-perceived-latency",
+      "kind": "opportunity",
+      "notes": "active",
+      "expected_value": 0.0,
+      "confidence": 0.7,
+      "relevance": 0.8,
+      "impact": 0.4,
+      "live_value": 0.42000000000000004,
+      "serves_building_toward": "The Analysis identifies perceived latency as the silent killer. Structural optimizations built: focus via requestAnimationFrame (was 50ms setTimeout), thinking shimmer fills API wait with visual activity. Remaining: measuring actual time-to-first-token with live API, the 100ms paste delay, and overlay show latency. Impact reduced from 0.7 to 0.4 \u2014 the structural wins are in, remaining gains require live measurement."
+    },
+    {
+      "id": "opp:keyboard-only-invoke-path",
+      "kind": "opportunity",
+      "notes": "active",
+      "expected_value": 0.0,
+      "confidence": 0.3,
+      "relevance": 0.9,
+      "impact": 0.7,
+      "live_value": 0.24,
+      "serves_building_toward": "The Analysis identifies number-key selection as what separates \"fast\" from \"magic.\" The keyboard-only path (Cmd+Shift+8 -> 1 -> prompt -> Enter) is the primary designed flow. Measuring and optimizing this path is directly the Building Toward goal."
+    },
+    {
+      "id": "opp:context-quality-validation",
+      "kind": "opportunity",
+      "notes": "active",
+      "expected_value": 0.0,
+      "confidence": 0.3,
+      "relevance": 0.7,
+      "impact": 0.8,
+      "live_value": 0.22499999999999998,
+      "serves_building_toward": "The Analysis names the biggest risk: gpt-4o-mini with a context block might produce text only marginally better than without. A side-by-side comparison during the build would validate or invalidate the core product thesis before demo day."
+    },
+    {
+      "id": "opp:overlay-empty-state",
+      "kind": "opportunity",
+      "notes": "retired",
+      "expected_value": 0.0,
+      "confidence": 0.3,
+      "relevance": 0.6,
+      "impact": 0.5,
+      "live_value": 0.165,
+      "serves_building_toward": "Resolved \u2014 empty state implemented in story:fr6-overlay-selector. Shows guidance to create first context."
+    }
+  ],
+  "edges": [],
+  "opportunities": [
+    {
+      "id": "opp:streaming-perceived-latency",
+      "status": "active",
+      "relevance": 0.8,
+      "impact": 0.4,
+      "expected_value": 0.0,
+      "confidence": 0.7,
+      "live_value": 0.42000000000000004,
+      "serves_building_toward": "The Analysis identifies perceived latency as the silent killer. Structural optimizations built: focus via requestAnimationFrame (was 50ms setTimeout), thinking shimmer fills API wait with visual activity. Remaining: measuring actual time-to-first-token with live API, the 100ms paste delay, and overlay show latency. Impact reduced from 0.7 to 0.4 \u2014 the structural wins are in, remaining gains require live measurement."
+    },
+    {
+      "id": "opp:keyboard-only-invoke-path",
+      "status": "active",
+      "relevance": 0.9,
+      "impact": 0.7,
+      "expected_value": 0.0,
+      "confidence": 0.3,
+      "live_value": 0.24,
+      "serves_building_toward": "The Analysis identifies number-key selection as what separates \"fast\" from \"magic.\" The keyboard-only path (Cmd+Shift+8 -> 1 -> prompt -> Enter) is the primary designed flow. Measuring and optimizing this path is directly the Building Toward goal."
+    },
+    {
+      "id": "opp:context-quality-validation",
+      "status": "active",
+      "relevance": 0.7,
+      "impact": 0.8,
+      "expected_value": 0.0,
+      "confidence": 0.3,
+      "live_value": 0.22499999999999998,
+      "serves_building_toward": "The Analysis names the biggest risk: gpt-4o-mini with a context block might produce text only marginally better than without. A side-by-side comparison during the build would validate or invalidate the core product thesis before demo day."
+    },
+    {
+      "id": "opp:overlay-empty-state",
+      "status": "retired",
+      "relevance": 0.6,
+      "impact": 0.5,
+      "expected_value": 0.0,
+      "confidence": 0.3,
+      "live_value": 0.165,
+      "serves_building_toward": "Resolved \u2014 empty state implemented in story:fr6-overlay-selector. Shows guidance to create first context."
+    }
+  ],
+  "promoted": [],
+  "snapshot": {
+    "iteration": 10,
+    "graph_delta_summary": "FR-2 part 1 built: interview chat UI with reflective layout, message persistence, context list in main window. Main window transitioned from dead placeholder to functional context manager. New observation about interview UI architecture readiness.; compacted to <= 20 nodes, <= 30 edges, <= 5 active opportunities",
+    "new_nodes": 1,
+    "new_edges": 0
+  },
+  "stats": {
+    "node_count": 20,
+    "edge_count": 0,
+    "active_opportunity_count": 4,
+    "frontier_pressure": 0.42000000000000004,
+    "remaining_graph_value": 1.05,
+    "top_opportunity": "opp:streaming-perceived-latency"
+  },
+  "tasks": [
+    {
+      "task_id": "story:scaffold",
+      "track": "commitment",
+      "status": "done",
+      "priority": 1.0,
+      "title": "Electron + React + TypeScript project scaffold with build and test infra"
+    },
+    {
+      "task_id": "story:sqlite-database",
+      "track": "commitment",
+      "status": "done",
+      "priority": 2.0,
+      "title": "SQLite database module with migrations and seed data"
+    },
+    {
+      "task_id": "story:openai-client",
+      "track": "commitment",
+      "status": "done",
+      "priority": 3.0,
+      "title": "OpenAI API client with keychain integration and retry logic"
+    },
+    {
+      "task_id": "story:fr1-tray-main-window",
+      "track": "commitment",
+      "status": "done",
+      "priority": 4.0,
+      "title": "FR-1: Menu bar tray icon and Context Studio main window"
+    },
+    {
+      "task_id": "story:fr5-global-shortcut",
+      "track": "commitment",
+      "status": "done",
+      "priority": 5.0,
+      "title": "FR-5: Global keyboard shortcut registration and overlay positioning"
+    },
+    {
+      "task_id": "story:fr6-overlay-selector",
+      "track": "commitment",
+      "status": "done",
+      "priority": 6.0,
+      "title": "FR-6 part 1: Quick Invoke overlay with context selector"
+    },
+    {
+      "task_id": "story:fr6-prompt-generation",
+      "track": "commitment",
+      "status": "done",
+      "priority": 7.0,
+      "title": "FR-6 part 2: Prompt input, streaming generation, and overlay lifecycle"
+    },
+    {
+      "task_id": "story:fr7-text-injection",
+      "track": "commitment",
+      "status": "done",
+      "priority": 8.0,
+      "title": "FR-7: Text injection via clipboard + paste simulation with fallback"
+    },
+    {
+      "task_id": "story:fr2-interview-ui",
+      "track": "commitment",
+      "status": "done",
+      "priority": 9.0,
+      "title": "FR-2 part 1: Interview chat UI with message persistence"
+    },
+    {
+      "task_id": "story:fr2-interview-ai",
+      "track": "commitment",
+      "status": "pending",
+      "priority": 10.0,
+      "title": "FR-2 part 2: Interview turn generator and synthesis pipeline"
+    },
+    {
+      "task_id": "story:fr3-reveal-card",
+      "track": "commitment",
+      "status": "pending",
+      "priority": 11.0,
+      "title": "FR-3: Synthesis reveal card with progressive disclosure"
+    },
+    {
+      "task_id": "story:fr9-onboarding",
+      "track": "commitment",
+      "status": "pending",
+      "priority": 12.0,
+      "title": "FR-9: First-launch onboarding flow"
+    },
+    {
+      "task_id": "story:context-list-detail",
+      "track": "commitment",
+      "status": "pending",
+      "priority": 13.0,
+      "title": "Context list and detail views in Context Studio"
+    },
+    {
+      "task_id": "story:explore-streaming-latency",
+      "track": "exploration",
+      "status": "done",
+      "priority": 1.0,
+      "title": "Optimize perceived latency in invoke loop \u2014 instant visual feedback and reduced delays"
+    },
+    {
+      "task_id": "story:explore-keyboard-flow-optimization",
+      "track": "exploration",
+      "status": "pending",
+      "priority": 1.0,
+      "title": "Optimize keyboard-only invoke flow for sub-3s completion"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+	/* Brand palette — premium utility aesthetic */
+	--color-star-50: #fdf8f0;
+	--color-star-100: #faebd7;
+	--color-star-200: #f5d6ae;
+	--color-star-400: #e8a84c;
+	--color-star-500: #d4912a;
+	--color-star-600: #b87a1f;
+
+	/* Surface tokens */
+	--color-surface: #0a0a0a;
+	--color-surface-raised: #141414;
+	--color-surface-overlay: #1a1a1a;
+
+	/* Text tokens */
+	--color-text-primary: #fafafa;
+	--color-text-secondary: #a3a3a3;
+	--color-text-muted: #525252;
+
+	/* Timing tokens for Framer Motion */
+	--duration-fast: 120ms;
+	--duration-normal: 200ms;
+	--duration-slow: 400ms;
+	--duration-reveal: 800ms;
+}

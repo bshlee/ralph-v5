@@ -1,0 +1,547 @@
+Ralph progress log
+2026-03-28T10:06:42+09:00 loop_stage iteration=1 phase=preflight status=start note=refreshing_state
+2026-03-28T10:06:43+09:00 loop_stage iteration=1 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T10:06:43+09:00 loop_start iteration=1 pass=1 total_passes=50
+2026-03-28T10:06:43+09:00 loop_stage iteration=1 phase=selection status=ok note=story_story:define-baseline
+2026-03-28T10:06:43+09:00 loop_stage iteration=1 phase=execution status=start note=agent_pass_started
+2026-03-28T10:08:00+09:00 init_start status=started
+2026-03-28T10:08:00+09:00 init_stage phase=inventory status=ok note=environment_and_requirements_generated
+2026-03-28T10:08:00+09:00 init_stage phase=sync status=ok note=bootstrap_sync_complete
+2026-03-28T10:08:01+09:00 init_stage phase=preflight status=ok note=bootstrap_validation_complete
+2026-03-28T10:08:01+09:00 init_stage phase=planning status=start note=agent_planning_started
+2026-03-28T10:14:05+09:00 loop_stage iteration=1 phase=execution status=ok note=agent_pass_finished duration_seconds=442.000
+2026-03-28T10:14:05+09:00 loop_stage iteration=1 phase=repair status=start note=normalizing_state
+2026-03-28T10:14:05+09:00 loop_stage iteration=1 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T10:14:05+09:00 loop_stage iteration=1 phase=validation status=error note=post_iteration_validation_failed duration_seconds=0.100
+2026-03-28T10:14:05+09:00 loop_stage iteration=1 phase=recovery status=start note=post_iteration_validation_failed
+2026-03-28T10:16:50+09:00 loop_stage iteration=1 phase=recovery status=ok note=fixed_markdown_formatting_in_ralph_state_files duration_seconds=165.000
+2026-03-28T10:16:50+09:00 loop_stage iteration=1 phase=validation status=ok note=all_checks_pass_after_recovery
+2026-03-28T10:17:00+09:00 loop_stage iteration=1 phase=recovery status=error note=recovery_failed duration_seconds=175.300
+2026-03-28T10:17:01+09:00 loop_end iteration=1 pass=1 total_passes=50 duration_seconds=618.200 result=validation_failed story=story:define-baseline
+2026-03-28T10:17:01+09:00 loop_stage iteration=1 phase=preflight status=start note=refreshing_state
+2026-03-28T10:17:01+09:00 loop_stage iteration=1 phase=preflight status=error note=preflight_failed duration_seconds=0.200
+2026-03-28T10:17:01+09:00 loop_stage iteration=1 phase=recovery status=start note=preflight_failed
+2026-03-28T10:17:05+09:00 init_stage phase=planning status=ok note=agent_planning_finished
+2026-03-28T10:17:06+09:00 init_stage phase=postprocess status=ok note=state_normalized
+2026-03-28T10:19:04+09:00 loop_stage iteration=1 phase=recovery status=ok note=state_recovered duration_seconds=123.000
+2026-03-28T10:19:04+09:00 loop_stage iteration=1 phase=preflight status=ok note=state_ready duration_seconds=123.300
+2026-03-28T10:19:04+09:00 loop_start iteration=1 pass=2 total_passes=50
+2026-03-28T10:19:04+09:00 loop_stage iteration=1 phase=selection status=ok note=story_story:scaffold
+2026-03-28T10:19:04+09:00 loop_stage iteration=1 phase=execution status=start note=agent_pass_started
+2026-03-28T10:22:42+09:00 loop_stage iteration=1 phase=execution status=ok note=agent_pass_finished duration_seconds=218.000
+2026-03-28T10:22:42+09:00 loop_stage iteration=1 phase=repair status=start note=normalizing_state
+2026-03-28T10:22:42+09:00 loop_stage iteration=1 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T10:22:43+09:00 loop_stage iteration=1 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T10:22:43+09:00 loop_stage iteration=1 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T10:22:43+09:00 iteration 1 story=story:scaffold done=false contract=0.029 pressure=0.234 remaining=0.847 divergence=0.323 stable_candidate=false
+2026-03-28T10:22:43+09:00 loop_stage iteration=1 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T10:22:43+09:00 loop_end iteration=1 pass=2 total_passes=50 duration_seconds=342.200 result=continued story=story:scaffold
+2026-03-28T10:22:43+09:00 loop_stage iteration=2 phase=preflight status=start note=refreshing_state
+2026-03-28T10:22:43+09:00 loop_stage iteration=2 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T10:22:43+09:00 loop_start iteration=2 pass=3 total_passes=50
+2026-03-28T10:22:43+09:00 loop_stage iteration=2 phase=selection status=ok note=story_story:scaffold
+2026-03-28T10:22:43+09:00 loop_stage iteration=2 phase=execution status=start note=agent_pass_started
+2026-03-28T10:26:39+09:00 loop_stage iteration=2 phase=execution status=ok note=agent_pass_finished duration_seconds=235.300
+2026-03-28T10:26:39+09:00 loop_stage iteration=2 phase=repair status=start note=normalizing_state
+2026-03-28T10:26:39+09:00 loop_stage iteration=2 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T10:26:39+09:00 loop_stage iteration=2 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T10:26:39+09:00 loop_stage iteration=2 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T10:26:39+09:00 iteration 2 story=story:sqlite-database done=false contract=0.062 pressure=0.235 remaining=0.847 divergence=0.315 stable_candidate=false
+2026-03-28T10:26:39+09:00 loop_stage iteration=2 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T10:26:39+09:00 loop_end iteration=2 pass=3 total_passes=50 duration_seconds=236.400 result=continued story=story:scaffold
+2026-03-28T10:26:39+09:00 loop_stage iteration=3 phase=preflight status=start note=refreshing_state
+2026-03-28T10:26:40+09:00 loop_stage iteration=3 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T10:26:40+09:00 loop_start iteration=3 pass=4 total_passes=50
+2026-03-28T10:26:40+09:00 loop_stage iteration=3 phase=selection status=ok note=story_story:sqlite-database
+2026-03-28T10:26:40+09:00 loop_stage iteration=3 phase=execution status=start note=agent_pass_started
+2026-03-28T10:32:52+09:00 loop_stage iteration=3 phase=execution status=ok note=agent_pass_finished duration_seconds=371.800
+2026-03-28T10:32:52+09:00 loop_stage iteration=3 phase=repair status=start note=normalizing_state
+2026-03-28T10:32:52+09:00 loop_stage iteration=3 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T10:32:52+09:00 loop_stage iteration=3 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T10:32:52+09:00 loop_stage iteration=3 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T10:32:52+09:00 iteration 3 story=story:openai-client done=false contract=0.087 pressure=0.235 remaining=0.848 divergence=0.308 stable_candidate=false
+2026-03-28T10:32:52+09:00 loop_stage iteration=3 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T10:32:52+09:00 loop_end iteration=3 pass=4 total_passes=50 duration_seconds=372.800 result=continued story=story:sqlite-database
+2026-03-28T10:32:52+09:00 loop_stage iteration=4 phase=preflight status=start note=refreshing_state
+2026-03-28T10:32:53+09:00 loop_stage iteration=4 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T10:32:53+09:00 loop_start iteration=4 pass=5 total_passes=50
+2026-03-28T10:32:53+09:00 loop_stage iteration=4 phase=selection status=ok note=story_story:openai-client
+2026-03-28T10:32:53+09:00 loop_stage iteration=4 phase=execution status=start note=agent_pass_started
+2026-03-28T10:41:12+09:00 loop_stage iteration=4 phase=execution status=ok note=agent_pass_finished duration_seconds=499.500
+2026-03-28T10:41:12+09:00 loop_stage iteration=4 phase=repair status=start note=normalizing_state
+2026-03-28T10:41:13+09:00 loop_stage iteration=4 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T10:41:13+09:00 loop_stage iteration=4 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T10:41:13+09:00 loop_stage iteration=4 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T10:41:13+09:00 iteration 4 story=story:fr1-tray-main-window done=false contract=0.142 pressure=0.236 remaining=0.849 divergence=0.295 stable_candidate=false
+2026-03-28T10:41:13+09:00 loop_stage iteration=4 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T10:41:13+09:00 loop_end iteration=4 pass=5 total_passes=50 duration_seconds=500.600 result=continued story=story:openai-client
+2026-03-28T10:41:13+09:00 loop_stage iteration=5 phase=preflight status=start note=refreshing_state
+2026-03-28T10:41:13+09:00 loop_stage iteration=5 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T10:41:13+09:00 loop_start iteration=5 pass=6 total_passes=50
+2026-03-28T10:41:13+09:00 loop_stage iteration=5 phase=selection status=ok note=story_story:fr1-tray-main-window
+2026-03-28T10:41:13+09:00 loop_stage iteration=5 phase=execution status=start note=agent_pass_started
+2026-03-28T10:45:20+09:00 loop_stage iteration=5 phase=execution status=ok note=agent_pass_finished duration_seconds=246.400
+2026-03-28T10:45:20+09:00 loop_stage iteration=5 phase=repair status=start note=normalizing_state
+2026-03-28T10:45:20+09:00 loop_stage iteration=5 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T10:45:20+09:00 loop_stage iteration=5 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T10:45:20+09:00 loop_stage iteration=5 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T10:45:20+09:00 iteration 5 story=story:fr5-global-shortcut done=false contract=0.233 pressure=0.237 remaining=0.850 divergence=0.272 stable_candidate=false
+2026-03-28T10:45:20+09:00 loop_stage iteration=5 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T10:45:21+09:00 loop_end iteration=5 pass=6 total_passes=50 duration_seconds=247.400 result=continued story=story:fr1-tray-main-window
+2026-03-28T10:45:21+09:00 loop_stage iteration=6 phase=preflight status=start note=refreshing_state
+2026-03-28T10:45:21+09:00 loop_stage iteration=6 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T10:45:21+09:00 loop_start iteration=6 pass=7 total_passes=50
+2026-03-28T10:45:21+09:00 loop_stage iteration=6 phase=selection status=ok note=story_story:fr5-global-shortcut
+2026-03-28T10:45:21+09:00 loop_stage iteration=6 phase=execution status=start note=agent_pass_started
+2026-03-28T10:52:37+09:00 loop_stage iteration=6 phase=execution status=ok note=agent_pass_finished duration_seconds=435.400
+2026-03-28T10:52:37+09:00 loop_stage iteration=6 phase=repair status=start note=normalizing_state
+2026-03-28T10:52:37+09:00 loop_stage iteration=6 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T10:52:37+09:00 loop_stage iteration=6 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T10:52:37+09:00 loop_stage iteration=6 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T10:52:37+09:00 iteration 6 story=story:fr6-overlay-selector done=false contract=0.316 pressure=0.238 remaining=0.688 divergence=0.251 stable_candidate=false
+2026-03-28T10:52:37+09:00 loop_stage iteration=6 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T10:52:37+09:00 loop_end iteration=6 pass=7 total_passes=50 duration_seconds=436.500 result=continued story=story:fr5-global-shortcut
+2026-03-28T10:52:37+09:00 loop_stage iteration=7 phase=preflight status=start note=refreshing_state
+2026-03-28T10:52:37+09:00 loop_stage iteration=7 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T10:52:38+09:00 loop_start iteration=7 pass=8 total_passes=50
+2026-03-28T10:52:38+09:00 loop_stage iteration=7 phase=selection status=ok note=story_story:fr6-overlay-selector
+2026-03-28T10:52:38+09:00 loop_stage iteration=7 phase=execution status=start note=agent_pass_started
+2026-03-28T10:58:47+09:00 loop_stage iteration=7 phase=execution status=ok note=agent_pass_finished duration_seconds=369.100
+2026-03-28T10:58:47+09:00 loop_stage iteration=7 phase=repair status=start note=normalizing_state
+2026-03-28T10:58:47+09:00 loop_stage iteration=7 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T10:58:47+09:00 loop_stage iteration=7 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T10:58:47+09:00 loop_stage iteration=7 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T10:58:47+09:00 iteration 7 story=story:fr6-prompt-generation done=false contract=0.447 pressure=0.449 remaining=0.914 divergence=0.218 stable_candidate=false
+2026-03-28T10:58:47+09:00 loop_stage iteration=7 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T10:58:47+09:00 loop_end iteration=7 pass=8 total_passes=50 duration_seconds=370.100 result=continued story=story:fr6-overlay-selector
+2026-03-28T10:58:47+09:00 loop_stage iteration=8 phase=preflight status=start note=refreshing_state
+2026-03-28T10:58:48+09:00 loop_stage iteration=8 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T10:58:48+09:00 loop_start iteration=8 pass=9 total_passes=50
+2026-03-28T10:58:48+09:00 loop_stage iteration=8 phase=selection status=ok note=story_story:fr6-prompt-generation
+2026-03-28T10:58:48+09:00 loop_stage iteration=8 phase=execution status=start note=agent_pass_started
+2026-03-28T11:13:11+09:00 loop_stage iteration=8 phase=execution status=ok note=agent_pass_finished duration_seconds=863.000
+2026-03-28T11:13:11+09:00 loop_stage iteration=8 phase=repair status=start note=normalizing_state
+2026-03-28T11:13:11+09:00 loop_stage iteration=8 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T11:13:11+09:00 loop_stage iteration=8 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T11:13:11+09:00 loop_stage iteration=8 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T11:13:11+09:00 iteration 8 story=story:fr7-text-injection done=false contract=0.542 pressure=0.526 remaining=0.991 divergence=0.195 stable_candidate=false
+2026-03-28T11:13:11+09:00 loop_stage iteration=8 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T11:13:12+09:00 loop_end iteration=8 pass=9 total_passes=50 duration_seconds=864.100 result=continued story=story:fr6-prompt-generation
+2026-03-28T11:13:12+09:00 loop_stage iteration=9 phase=preflight status=start note=refreshing_state
+2026-03-28T11:13:12+09:00 loop_stage iteration=9 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T11:13:12+09:00 loop_start iteration=9 pass=10 total_passes=50
+2026-03-28T11:13:12+09:00 loop_stage iteration=9 phase=selection status=ok note=story_story:fr7-text-injection
+2026-03-28T11:13:12+09:00 loop_stage iteration=9 phase=execution status=start note=agent_pass_started
+2026-03-28T11:21:21+09:00 loop_stage iteration=9 phase=execution status=ok note=agent_pass_finished duration_seconds=488.700
+2026-03-28T11:21:21+09:00 loop_stage iteration=9 phase=repair status=start note=normalizing_state
+2026-03-28T11:21:21+09:00 loop_stage iteration=9 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T11:21:21+09:00 loop_stage iteration=9 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T11:21:21+09:00 loop_stage iteration=9 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T11:21:21+09:00 iteration 9 story=story:explore-streaming-latency done=false contract=0.553 pressure=0.423 remaining=0.888 divergence=0.192 stable_candidate=false
+2026-03-28T11:21:21+09:00 loop_stage iteration=9 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T11:21:21+09:00 loop_end iteration=9 pass=10 total_passes=50 duration_seconds=489.700 result=continued story=story:fr7-text-injection
+2026-03-28T11:21:21+09:00 loop_stage iteration=10 phase=preflight status=start note=refreshing_state
+2026-03-28T11:21:22+09:00 loop_stage iteration=10 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T11:21:22+09:00 loop_start iteration=10 pass=11 total_passes=50
+2026-03-28T11:21:22+09:00 loop_stage iteration=10 phase=selection status=ok note=story_story:explore-streaming-latency
+2026-03-28T11:21:22+09:00 loop_stage iteration=10 phase=execution status=start note=agent_pass_started
+2026-03-28T11:30:39+09:00 loop_stage iteration=10 phase=execution status=ok note=agent_pass_finished duration_seconds=557.400
+2026-03-28T11:30:39+09:00 loop_stage iteration=10 phase=repair status=start note=normalizing_state
+2026-03-28T11:30:39+09:00 loop_stage iteration=10 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T11:30:39+09:00 loop_stage iteration=10 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T11:30:40+09:00 loop_stage iteration=10 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T11:30:40+09:00 iteration 10 story=story:fr2-interview-ui done=false contract=0.636 pressure=0.428 remaining=0.893 divergence=0.171 stable_candidate=false
+2026-03-28T11:30:40+09:00 loop_stage iteration=10 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T11:30:40+09:00 loop_end iteration=10 pass=11 total_passes=50 duration_seconds=558.400 result=continued story=story:explore-streaming-latency
+2026-03-28T11:30:40+09:00 loop_stage iteration=11 phase=preflight status=start note=refreshing_state
+2026-03-28T11:30:40+09:00 loop_stage iteration=11 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T11:30:40+09:00 loop_start iteration=11 pass=12 total_passes=50
+2026-03-28T11:30:40+09:00 loop_stage iteration=11 phase=selection status=ok note=story_story:fr2-interview-ui
+2026-03-28T11:30:40+09:00 loop_stage iteration=11 phase=execution status=start note=agent_pass_started
+2026-03-28T11:35:24+09:00 loop_stage iteration=11 phase=execution status=error note=agent_pass_failed duration_seconds=283.300
+2026-03-28T11:35:24+09:00 loop_stage iteration=11 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T11:37:38+09:00 loop_stage iteration=11 phase=recovery status=ok note=state_recovered duration_seconds=134.800
+2026-03-28T11:37:39+09:00 loop_stage iteration=11 phase=execution status=ok note=agent_pass_finished duration_seconds=418.200
+2026-03-28T11:37:39+09:00 loop_stage iteration=11 phase=repair status=start note=normalizing_state
+2026-03-28T11:37:39+09:00 loop_stage iteration=11 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T11:37:39+09:00 loop_stage iteration=11 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T11:37:39+09:00 loop_stage iteration=11 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T11:37:39+09:00 iteration 11 story=story:fr2-interview-ai done=false contract=0.636 pressure=0.428 remaining=0.893 divergence=0.171 stable_candidate=false
+2026-03-28T11:37:39+09:00 loop_stage iteration=11 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T11:37:39+09:00 loop_end iteration=11 pass=12 total_passes=50 duration_seconds=419.200 result=continued story=story:fr2-interview-ui
+2026-03-28T11:37:39+09:00 loop_stage iteration=12 phase=preflight status=start note=refreshing_state
+2026-03-28T11:37:39+09:00 loop_stage iteration=12 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T11:37:39+09:00 loop_start iteration=12 pass=13 total_passes=50
+2026-03-28T11:37:39+09:00 loop_stage iteration=12 phase=selection status=ok note=story_story:fr2-interview-ai
+2026-03-28T11:37:40+09:00 loop_stage iteration=12 phase=execution status=start note=agent_pass_started
+2026-03-28T11:44:55+09:00 loop_stage iteration=12 phase=execution status=ok note=agent_pass_finished duration_seconds=435.000
+2026-03-28T11:44:55+09:00 loop_stage iteration=12 phase=repair status=start note=normalizing_state
+2026-03-28T11:44:55+09:00 loop_stage iteration=12 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T11:44:55+09:00 loop_stage iteration=12 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T11:44:55+09:00 loop_stage iteration=12 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T11:44:55+09:00 iteration 11 story=story:fr2-interview-ai done=false contract=0.758 pressure=0.434 remaining=0.901 divergence=0.141 stable_candidate=false
+2026-03-28T11:44:55+09:00 loop_stage iteration=12 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T11:44:55+09:00 loop_end iteration=12 pass=13 total_passes=50 duration_seconds=435.900 result=continued story=story:fr2-interview-ai
+2026-03-28T11:44:55+09:00 loop_stage iteration=12 phase=preflight status=start note=refreshing_state
+2026-03-28T11:44:55+09:00 loop_stage iteration=12 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T11:44:55+09:00 loop_start iteration=12 pass=14 total_passes=50
+2026-03-28T11:44:56+09:00 loop_stage iteration=12 phase=selection status=ok note=story_story:fr2-interview-ai
+2026-03-28T11:44:56+09:00 loop_stage iteration=12 phase=execution status=start note=agent_pass_started
+2026-03-28T11:52:58+09:00 loop_stage iteration=12 phase=execution status=ok note=agent_pass_finished duration_seconds=482.700
+2026-03-28T11:52:58+09:00 loop_stage iteration=12 phase=repair status=start note=normalizing_state
+2026-03-28T11:52:58+09:00 loop_stage iteration=12 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T11:52:59+09:00 loop_stage iteration=12 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T11:52:59+09:00 loop_stage iteration=12 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T11:52:59+09:00 iteration 12 story=story:fr3-reveal-card done=false contract=0.798 pressure=0.437 remaining=0.903 divergence=0.131 stable_candidate=false
+2026-03-28T11:52:59+09:00 loop_stage iteration=12 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T11:52:59+09:00 loop_end iteration=12 pass=14 total_passes=50 duration_seconds=483.700 result=continued story=story:fr2-interview-ai
+2026-03-28T11:52:59+09:00 loop_stage iteration=13 phase=preflight status=start note=refreshing_state
+2026-03-28T11:52:59+09:00 loop_stage iteration=13 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T11:52:59+09:00 loop_start iteration=13 pass=15 total_passes=50
+2026-03-28T11:52:59+09:00 loop_stage iteration=13 phase=selection status=ok note=story_story:fr3-reveal-card
+2026-03-28T11:52:59+09:00 loop_stage iteration=13 phase=execution status=start note=agent_pass_started
+2026-03-28T12:01:18+09:00 loop_stage iteration=13 phase=execution status=ok note=agent_pass_finished duration_seconds=498.600
+2026-03-28T12:01:18+09:00 loop_stage iteration=13 phase=repair status=start note=normalizing_state
+2026-03-28T12:01:18+09:00 loop_stage iteration=13 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T12:01:18+09:00 loop_stage iteration=13 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T12:01:18+09:00 loop_stage iteration=13 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T12:01:18+09:00 iteration 13 story=story:fr9-onboarding done=false contract=0.880 pressure=0.245 remaining=0.467 divergence=0.110 stable_candidate=false
+2026-03-28T12:01:18+09:00 loop_stage iteration=13 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T12:01:19+09:00 loop_end iteration=13 pass=15 total_passes=50 duration_seconds=499.600 result=continued story=story:fr3-reveal-card
+2026-03-28T12:01:19+09:00 loop_stage iteration=14 phase=preflight status=start note=refreshing_state
+2026-03-28T12:01:19+09:00 loop_stage iteration=14 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:01:19+09:00 loop_start iteration=14 pass=16 total_passes=50
+2026-03-28T12:01:19+09:00 loop_stage iteration=14 phase=selection status=ok note=story_story:fr9-onboarding
+2026-03-28T12:01:19+09:00 loop_stage iteration=14 phase=execution status=start note=agent_pass_started
+2026-03-28T12:09:38+09:00 loop_stage iteration=14 phase=execution status=ok note=agent_pass_finished duration_seconds=498.900
+2026-03-28T12:09:38+09:00 loop_stage iteration=14 phase=repair status=start note=normalizing_state
+2026-03-28T12:09:38+09:00 loop_stage iteration=14 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T12:09:38+09:00 loop_stage iteration=14 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T12:09:38+09:00 loop_stage iteration=14 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T12:09:38+09:00 iteration 14 story=story:context-list-detail done=false contract=0.901 pressure=0.245 remaining=0.467 divergence=0.105 stable_candidate=false
+2026-03-28T12:09:38+09:00 loop_stage iteration=14 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T12:09:39+09:00 loop_end iteration=14 pass=16 total_passes=50 duration_seconds=499.900 result=continued story=story:fr9-onboarding
+2026-03-28T12:09:39+09:00 loop_stage iteration=15 phase=preflight status=start note=refreshing_state
+2026-03-28T12:09:39+09:00 loop_stage iteration=15 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:09:39+09:00 loop_start iteration=15 pass=17 total_passes=50
+2026-03-28T12:09:39+09:00 loop_stage iteration=15 phase=selection status=ok note=story_story:context-list-detail
+2026-03-28T12:09:39+09:00 loop_stage iteration=15 phase=execution status=start note=agent_pass_started
+2026-03-28T12:19:50+09:00 loop_stage iteration=15 phase=execution status=ok note=agent_pass_finished duration_seconds=611.400
+2026-03-28T12:19:51+09:00 loop_stage iteration=15 phase=repair status=start note=normalizing_state
+2026-03-28T12:19:51+09:00 loop_stage iteration=15 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T12:19:51+09:00 loop_stage iteration=15 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T12:19:51+09:00 loop_stage iteration=15 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T12:19:51+09:00 iteration 15 story=story:explore-keyboard-flow-optimization done=false contract=0.901 pressure=0.223 remaining=0.223 divergence=0.105 stable_candidate=false
+2026-03-28T12:19:51+09:00 loop_stage iteration=15 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T12:19:51+09:00 loop_end iteration=15 pass=17 total_passes=50 duration_seconds=612.400 result=continued story=story:context-list-detail
+2026-03-28T12:19:51+09:00 loop_stage iteration=16 phase=preflight status=start note=refreshing_state
+2026-03-28T12:19:51+09:00 loop_stage iteration=16 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:19:51+09:00 loop_start iteration=16 pass=18 total_passes=50
+2026-03-28T12:19:51+09:00 loop_stage iteration=16 phase=selection status=ok note=story_story:explore-keyboard-flow-optimization
+2026-03-28T12:19:51+09:00 loop_stage iteration=16 phase=execution status=start note=agent_pass_started
+2026-03-28T12:25:30+09:00 loop_stage iteration=16 phase=execution status=ok note=agent_pass_finished duration_seconds=338.000
+2026-03-28T12:25:30+09:00 loop_stage iteration=16 phase=repair status=start note=normalizing_state
+2026-03-28T12:25:30+09:00 loop_stage iteration=16 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T12:25:30+09:00 loop_stage iteration=16 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T12:25:30+09:00 loop_stage iteration=16 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T12:25:30+09:00 iteration 16 story=- Track: stability done=false contract=0.901 pressure=0.223 remaining=0.223 divergence=0.105 stable_candidate=false
+2026-03-28T12:25:30+09:00 loop_stage iteration=16 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T12:25:30+09:00 loop_end iteration=16 pass=18 total_passes=50 duration_seconds=339.000 result=continued story=story:explore-keyboard-flow-optimization
+2026-03-28T12:25:30+09:00 loop_stage iteration=17 phase=preflight status=start note=refreshing_state
+2026-03-28T12:25:30+09:00 loop_stage iteration=17 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:25:30+09:00 loop_start iteration=17 pass=19 total_passes=50
+2026-03-28T12:25:30+09:00 loop_stage iteration=17 phase=execution status=start note=agent_pass_started
+2026-03-28T12:27:25+09:00 loop_stage iteration=17 phase=execution status=ok note=agent_pass_finished duration_seconds=114.700
+2026-03-28T12:27:25+09:00 loop_stage iteration=17 phase=repair status=start note=normalizing_state
+2026-03-28T12:27:25+09:00 loop_stage iteration=17 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T12:27:25+09:00 loop_stage iteration=17 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T12:27:26+09:00 loop_stage iteration=17 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T12:27:26+09:00 iteration 17 story=- Track: stability done=false contract=0.901 pressure=0.150 remaining=0.150 divergence=0.105 stable_candidate=false
+2026-03-28T12:27:26+09:00 loop_stage iteration=17 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T12:27:26+09:00 loop_end iteration=17 pass=19 total_passes=50 duration_seconds=115.600 result=continued
+2026-03-28T12:27:26+09:00 loop_stage iteration=18 phase=preflight status=start note=refreshing_state
+2026-03-28T12:27:26+09:00 loop_stage iteration=18 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:27:26+09:00 loop_start iteration=18 pass=20 total_passes=50
+2026-03-28T12:27:26+09:00 loop_stage iteration=18 phase=execution status=start note=agent_pass_started
+2026-03-28T12:35:03+09:00 loop_stage iteration=18 phase=execution status=ok note=agent_pass_finished duration_seconds=456.900
+2026-03-28T12:35:03+09:00 loop_stage iteration=18 phase=repair status=start note=normalizing_state
+2026-03-28T12:35:03+09:00 loop_stage iteration=18 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T12:35:03+09:00 loop_stage iteration=18 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T12:35:03+09:00 loop_stage iteration=18 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T12:35:04+09:00 iteration 18 story=story:explore-reveal-fullscreen done=false contract=0.923 pressure=0.150 remaining=0.150 divergence=0.099 stable_candidate=false
+2026-03-28T12:35:04+09:00 loop_stage iteration=18 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T12:35:04+09:00 loop_end iteration=18 pass=20 total_passes=50 duration_seconds=457.900 result=continued
+2026-03-28T12:35:04+09:00 loop_stage iteration=19 phase=preflight status=start note=refreshing_state
+2026-03-28T12:35:04+09:00 loop_stage iteration=19 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:35:04+09:00 loop_start iteration=19 pass=21 total_passes=50
+2026-03-28T12:35:04+09:00 loop_stage iteration=19 phase=selection status=ok note=story_story:explore-reveal-fullscreen
+2026-03-28T12:35:04+09:00 loop_stage iteration=19 phase=execution status=start note=agent_pass_started
+2026-03-28T12:40:55+09:00 loop_stage iteration=19 phase=execution status=ok note=agent_pass_finished duration_seconds=350.300
+2026-03-28T12:40:55+09:00 loop_stage iteration=19 phase=repair status=start note=normalizing_state
+2026-03-28T12:40:55+09:00 loop_stage iteration=19 phase=repair status=ok note=state_normalized duration_seconds=0.100
+2026-03-28T12:40:55+09:00 loop_stage iteration=19 phase=validation status=ok note=state_valid duration_seconds=0.100
+2026-03-28T12:40:55+09:00 loop_stage iteration=19 phase=evaluator status=ok note=live_metrics_refreshed duration_seconds=0.100
+2026-03-28T12:40:55+09:00 iteration 19 story=- Track: stability done=false contract=0.923 pressure=0.380 remaining=0.380 divergence=0.099 stable_candidate=false
+2026-03-28T12:40:55+09:00 loop_stage iteration=19 phase=progress status=ok note=checkpoint_recorded duration_seconds=0.100
+2026-03-28T12:40:55+09:00 loop_end iteration=19 pass=21 total_passes=50 duration_seconds=351.300 result=continued story=story:explore-reveal-fullscreen
+2026-03-28T12:40:55+09:00 loop_stage iteration=20 phase=preflight status=start note=refreshing_state
+2026-03-28T12:40:55+09:00 loop_stage iteration=20 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:40:55+09:00 loop_start iteration=20 pass=22 total_passes=50
+2026-03-28T12:40:55+09:00 loop_stage iteration=20 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:40:56+09:00 loop_stage iteration=20 phase=execution status=start note=agent_pass_started
+2026-03-28T12:43:37+09:00 loop_stage iteration=20 phase=execution status=error note=agent_pass_failed duration_seconds=161.500
+2026-03-28T12:43:37+09:00 loop_stage iteration=20 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:43:42+09:00 loop_stage iteration=20 phase=recovery status=error note=recovery_failed duration_seconds=4.800
+2026-03-28T12:43:42+09:00 loop_end iteration=20 pass=22 total_passes=50 duration_seconds=166.800 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:43:42+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:43:42+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:43:42+09:00 loop_start iteration=21 pass=23 total_passes=50
+2026-03-28T12:43:42+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:43:42+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:43:48+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:43:48+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:43:51+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=3.000
+2026-03-28T12:43:51+09:00 loop_end iteration=21 pass=23 total_passes=50 duration_seconds=8.900 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:43:51+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:43:51+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:43:51+09:00 loop_start iteration=21 pass=24 total_passes=50
+2026-03-28T12:43:51+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:43:51+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:43:57+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.500
+2026-03-28T12:43:57+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:44:02+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.700
+2026-03-28T12:44:02+09:00 loop_end iteration=21 pass=24 total_passes=50 duration_seconds=10.700 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:44:02+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:44:02+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:44:02+09:00 loop_start iteration=21 pass=25 total_passes=50
+2026-03-28T12:44:02+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:44:02+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:44:08+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.600
+2026-03-28T12:44:08+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:44:13+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.800
+2026-03-28T12:44:13+09:00 loop_end iteration=21 pass=25 total_passes=50 duration_seconds=10.900 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:44:13+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:44:13+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:44:13+09:00 loop_start iteration=21 pass=26 total_passes=50
+2026-03-28T12:44:13+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:44:13+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:44:18+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.200
+2026-03-28T12:44:18+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:44:23+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=5.000
+2026-03-28T12:44:24+09:00 loop_end iteration=21 pass=26 total_passes=50 duration_seconds=10.700 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:44:24+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:44:24+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:44:24+09:00 loop_start iteration=21 pass=27 total_passes=50
+2026-03-28T12:44:24+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:44:24+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:44:30+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.700
+2026-03-28T12:44:30+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:44:35+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=5.100
+2026-03-28T12:44:35+09:00 loop_end iteration=21 pass=27 total_passes=50 duration_seconds=11.300 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:44:35+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:44:35+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:44:35+09:00 loop_start iteration=21 pass=28 total_passes=50
+2026-03-28T12:44:35+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:44:35+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:44:41+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:44:41+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:44:45+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.700
+2026-03-28T12:44:46+09:00 loop_end iteration=21 pass=28 total_passes=50 duration_seconds=10.600 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:44:46+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:44:46+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:44:46+09:00 loop_start iteration=21 pass=29 total_passes=50
+2026-03-28T12:44:46+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:44:46+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:44:51+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.200
+2026-03-28T12:44:51+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:44:56+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.800
+2026-03-28T12:44:56+09:00 loop_end iteration=21 pass=29 total_passes=50 duration_seconds=10.500 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:44:56+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:44:56+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:44:56+09:00 loop_start iteration=21 pass=30 total_passes=50
+2026-03-28T12:44:57+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:44:57+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:45:02+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.100
+2026-03-28T12:45:02+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:45:06+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.600
+2026-03-28T12:45:06+09:00 loop_end iteration=21 pass=30 total_passes=50 duration_seconds=10.200 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:45:07+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:45:07+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:45:07+09:00 loop_start iteration=21 pass=31 total_passes=50
+2026-03-28T12:45:07+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:45:07+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:45:13+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.800
+2026-03-28T12:45:13+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:45:18+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=5.200
+2026-03-28T12:45:18+09:00 loop_end iteration=21 pass=31 total_passes=50 duration_seconds=11.500 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:45:18+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:45:18+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:45:18+09:00 loop_start iteration=21 pass=32 total_passes=50
+2026-03-28T12:45:18+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:45:18+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:45:24+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:45:24+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:45:29+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=5.200
+2026-03-28T12:45:29+09:00 loop_end iteration=21 pass=32 total_passes=50 duration_seconds=11.000 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:45:29+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:45:29+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:45:29+09:00 loop_start iteration=21 pass=33 total_passes=50
+2026-03-28T12:45:30+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:45:30+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:45:35+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:45:35+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:45:40+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=5.000
+2026-03-28T12:45:40+09:00 loop_end iteration=21 pass=33 total_passes=50 duration_seconds=10.900 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:45:40+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:45:40+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:45:40+09:00 loop_start iteration=21 pass=34 total_passes=50
+2026-03-28T12:45:41+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:45:41+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:45:46+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:45:46+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:45:51+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.800
+2026-03-28T12:45:51+09:00 loop_end iteration=21 pass=34 total_passes=50 duration_seconds=10.700 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:45:51+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:45:51+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:45:51+09:00 loop_start iteration=21 pass=35 total_passes=50
+2026-03-28T12:45:51+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:45:51+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:45:57+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.600
+2026-03-28T12:45:57+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:46:02+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.700
+2026-03-28T12:46:02+09:00 loop_end iteration=21 pass=35 total_passes=50 duration_seconds=10.800 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:46:02+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:46:02+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:46:02+09:00 loop_start iteration=21 pass=36 total_passes=50
+2026-03-28T12:46:02+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:46:02+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:46:08+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:46:08+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:46:13+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=5.200
+2026-03-28T12:46:13+09:00 loop_end iteration=21 pass=36 total_passes=50 duration_seconds=11.100 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:46:13+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:46:13+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:46:13+09:00 loop_start iteration=21 pass=37 total_passes=50
+2026-03-28T12:46:13+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:46:13+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:46:19+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:46:19+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:46:24+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.700
+2026-03-28T12:46:24+09:00 loop_end iteration=21 pass=37 total_passes=50 duration_seconds=10.600 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:46:24+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:46:24+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:46:24+09:00 loop_start iteration=21 pass=38 total_passes=50
+2026-03-28T12:46:24+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:46:24+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:46:29+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:46:30+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:46:35+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=5.000
+2026-03-28T12:46:35+09:00 loop_end iteration=21 pass=38 total_passes=50 duration_seconds=10.900 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:46:35+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:46:35+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:46:35+09:00 loop_start iteration=21 pass=39 total_passes=50
+2026-03-28T12:46:35+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:46:35+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:46:40+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.200
+2026-03-28T12:46:40+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:46:45+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.700
+2026-03-28T12:46:45+09:00 loop_end iteration=21 pass=39 total_passes=50 duration_seconds=10.300 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:46:45+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:46:45+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:46:45+09:00 loop_start iteration=21 pass=40 total_passes=50
+2026-03-28T12:46:45+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:46:45+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:46:51+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.500
+2026-03-28T12:46:51+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:46:56+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.500
+2026-03-28T12:46:56+09:00 loop_end iteration=21 pass=40 total_passes=50 duration_seconds=10.500 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:46:56+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:46:56+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:46:56+09:00 loop_start iteration=21 pass=41 total_passes=50
+2026-03-28T12:46:56+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:46:56+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:47:01+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.300
+2026-03-28T12:47:01+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:47:06+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.600
+2026-03-28T12:47:06+09:00 loop_end iteration=21 pass=41 total_passes=50 duration_seconds=10.300 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:47:06+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:47:06+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:47:06+09:00 loop_start iteration=21 pass=42 total_passes=50
+2026-03-28T12:47:06+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:47:07+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:47:12+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.300
+2026-03-28T12:47:12+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:47:16+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.600
+2026-03-28T12:47:17+09:00 loop_end iteration=21 pass=42 total_passes=50 duration_seconds=10.400 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:47:17+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:47:17+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:47:17+09:00 loop_start iteration=21 pass=43 total_passes=50
+2026-03-28T12:47:17+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:47:17+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:47:22+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:47:22+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:47:27+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.800
+2026-03-28T12:47:27+09:00 loop_end iteration=21 pass=43 total_passes=50 duration_seconds=10.700 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:47:27+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:47:28+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:47:28+09:00 loop_start iteration=21 pass=44 total_passes=50
+2026-03-28T12:47:28+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:47:28+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:47:33+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.700
+2026-03-28T12:47:33+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:47:38+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.700
+2026-03-28T12:47:38+09:00 loop_end iteration=21 pass=44 total_passes=50 duration_seconds=10.900 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:47:38+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:47:39+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:47:39+09:00 loop_start iteration=21 pass=45 total_passes=50
+2026-03-28T12:47:39+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:47:39+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:47:44+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.100
+2026-03-28T12:47:44+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:47:49+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.700
+2026-03-28T12:47:49+09:00 loop_end iteration=21 pass=45 total_passes=50 duration_seconds=10.300 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:47:49+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:47:49+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:47:49+09:00 loop_start iteration=21 pass=46 total_passes=50
+2026-03-28T12:47:49+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:47:49+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:47:54+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:47:55+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:47:59+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.600
+2026-03-28T12:47:59+09:00 loop_end iteration=21 pass=46 total_passes=50 duration_seconds=10.600 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:47:59+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:48:00+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:48:00+09:00 loop_start iteration=21 pass=47 total_passes=50
+2026-03-28T12:48:00+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:48:00+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:48:05+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.000
+2026-03-28T12:48:05+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:48:09+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.600
+2026-03-28T12:48:09+09:00 loop_end iteration=21 pass=47 total_passes=50 duration_seconds=10.100 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:48:10+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:48:10+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:48:10+09:00 loop_start iteration=21 pass=48 total_passes=50
+2026-03-28T12:48:10+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:48:10+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:48:15+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.300
+2026-03-28T12:48:15+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:48:20+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.900
+2026-03-28T12:48:20+09:00 loop_end iteration=21 pass=48 total_passes=50 duration_seconds=10.700 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:48:20+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:48:21+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:48:21+09:00 loop_start iteration=21 pass=49 total_passes=50
+2026-03-28T12:48:21+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:48:21+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:48:26+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.500
+2026-03-28T12:48:26+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:48:31+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.700
+2026-03-28T12:48:31+09:00 loop_end iteration=21 pass=49 total_passes=50 duration_seconds=10.700 result=execution_failed story=story:explore-overlay-spotlight
+2026-03-28T12:48:31+09:00 loop_stage iteration=21 phase=preflight status=start note=refreshing_state
+2026-03-28T12:48:31+09:00 loop_stage iteration=21 phase=preflight status=ok note=state_ready duration_seconds=0.200
+2026-03-28T12:48:31+09:00 loop_start iteration=21 pass=50 total_passes=50
+2026-03-28T12:48:31+09:00 loop_stage iteration=21 phase=selection status=ok note=story_story:explore-overlay-spotlight
+2026-03-28T12:48:31+09:00 loop_stage iteration=21 phase=execution status=start note=agent_pass_started
+2026-03-28T12:48:37+09:00 loop_stage iteration=21 phase=execution status=error note=agent_pass_failed duration_seconds=5.400
+2026-03-28T12:48:37+09:00 loop_stage iteration=21 phase=recovery status=start note=iteration_execution_failed
+2026-03-28T12:48:42+09:00 loop_stage iteration=21 phase=recovery status=error note=recovery_failed duration_seconds=4.900
+2026-03-28T12:48:42+09:00 loop_end iteration=21 pass=50 total_passes=50 duration_seconds=10.800 result=execution_failed story=story:explore-overlay-spotlight
